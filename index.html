@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #mensaje { color: rgb(230, 48, 48); }
+        .producto { display: flex; justify-content: space-between; margin-bottom: 40px; }
+        .producto button { margin-left: 10px; }
+        img { max-width: 200px; margin-left: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Carrito de Compras</h1>
+    <h2>NUESTROS PRODUCTOS</h2>
+    <div id="productos">
+        <div class="producto">
+            <span>SILLON 1 CUERPO - $190000</span>
+            <img src="./assets/sillon1cuerponuevo.png" alt="SILLON 1 CUERPO">
+            <button onclick="agregarAlCarrito('SILLON 1 CUERPO', 190000, './assets/sillon1cuerponuevo.png')">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <span>SILLON 2 CUERPO - $250000</span>
+            <img src="./assets/sillon2cuerponuevo.png" alt="SILLON 2 CUERPOS">
+            <button onclick="agregarAlCarrito('SILLON 2 CUERPOS', 250000, './assets/sillon2cuerponuevo.png')">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <span>SILLON 3 CUERPO - $310000</span>
+            <img src="./assets/sillon3cuerponuevo1.png" alt="SILLON 3 CUERPOS">
+            <button onclick="agregarAlCarrito('SILLON 3 CUERPOS', 310000, './assets/sillon3cuerponuevo1.png')">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <span>MESA DE COMEDOR - $175000</span>
+            <img src="./assets/mesaproductosnuevo.png" alt="MESA DE COMEDOR">
+            <button onclick="agregarAlCarrito('MESA DE COMEDOR', 175000, './assets/mesaproductosnuevo.png')">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <span>SILLA DE COMEDOR (POR UNIDAD) - $50000</span>
+            <img src="./assets/sillanegra2.jpg" alt="SILLA DE COMEDOR">
+            <button onclick="agregarAlCarrito('SILLA DE COMEDOR', 50000, './assets/sillanegra2.jpg')">Agregar al Carrito</button>
+        </div>
+    </div>
+    <h2>Carrito</h2>
+    <div id="mensaje"></div>
+    <ul id="listaCarrito"></ul>
+    <div id="total">Total: $0</div>
+    <script src="script.js"></script>
+</body>
+</html>
+
